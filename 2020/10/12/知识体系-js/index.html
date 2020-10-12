@@ -17,10 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="JackYin">
   <meta name="keywords" content="">
-  <title>归档 - JackYin</title>
+  <title>知识体系-js - JackYin</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -43,7 +56,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -142,6 +155,43 @@
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-10-12 21:29" pubdate>
+        2020年10月12日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      108 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
           
@@ -152,67 +202,127 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 6 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-%E7%BD%91%E7%BB%9C/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">知识体系-网络</span>
-      <time style="float: right;">10-12</time>
-    </a>
-  
-    
-    <a href="/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-%E5%B7%A5%E7%A8%8B%E5%8C%96/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">知识体系-工程化</span>
-      <time style="float: right;">10-12</time>
-    </a>
-  
-    
-    <a href="/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-%E6%B5%8F%E8%A7%88%E5%99%A8/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">知识体系-浏览器</span>
-      <time style="float: right;">10-12</time>
-    </a>
-  
-    
-    <a href="/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-js/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">知识体系-js</span>
-      <time style="float: right;">10-12</time>
-    </a>
-  
-    
-    <a href="/2020/09/27/h5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">h5常见问题整理</span>
-      <time style="float: right;">09-27</time>
-    </a>
-  
-    
-    <a href="/2020/09/24/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">09-24</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">知识体系-js</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <blockquote>
+<p>知识梳理</p>
+</blockquote>
+<h2 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h2><h3 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型 :"></a>基本类型 :</h3><blockquote>
+<p>number boolean string null undefined bigInt symbol</p>
+</blockquote>
+<h3 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h3><ul>
+<li>typeof</li>
+<li>instanceof<pre><code class="hljs js"><span class="hljs-keyword">var</span> a=<span class="hljs-string">&#x27;11&#x27;</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(a);<span class="hljs-comment">//[object String]</span></code></pre>
+<h2 id="2-原型、原型链"><a href="#2-原型、原型链" class="headerlink" title="2. 原型、原型链"></a>2. 原型、原型链</h2><h2 id="3-new执行了哪些操作"><a href="#3-new执行了哪些操作" class="headerlink" title="3. new执行了哪些操作"></a>3. new执行了哪些操作</h2><h2 id="4-闭包"><a href="#4-闭包" class="headerlink" title="4.闭包"></a>4.闭包</h2><h3 id="为什么使用闭包"><a href="#为什么使用闭包" class="headerlink" title="为什么使用闭包"></a>为什么使用闭包</h3><h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><h2 id="5-this"><a href="#5-this" class="headerlink" title="5. this"></a>5. this</h2><h3 id="普通函数-箭头函数-this获取"><a href="#普通函数-箭头函数-this获取" class="headerlink" title="普通函数 箭头函数 this获取"></a>普通函数 箭头函数 this获取</h3><h3 id="改变this的方法"><a href="#改变this的方法" class="headerlink" title="改变this的方法"></a>改变this的方法</h3><h2 id="6-数组常用方法"><a href="#6-数组常用方法" class="headerlink" title="6. 数组常用方法"></a>6. 数组常用方法</h2><h2 id="7-字符串常用方法"><a href="#7-字符串常用方法" class="headerlink" title="7. 字符串常用方法"></a>7. 字符串常用方法</h2><h2 id="8-事件代理"><a href="#8-事件代理" class="headerlink" title="8. 事件代理"></a>8. 事件代理</h2><h2 id="9-异步"><a href="#9-异步" class="headerlink" title="9. 异步"></a>9. 异步</h2><h3 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h3><h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h3 id="setTimeout"><a href="#setTimeout" class="headerlink" title="setTimeout"></a>setTimeout</h3></li>
+</ul>
 
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">知识体系</a>
+                    
+                      <a class="hover-with-bg" href="/tags/js/">js</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">知识体系-浏览器</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/09/27/h5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/">
+                        <span class="hidden-mobile">h5常见问题整理</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "oJc6u5Pa0fBp7xg95uMNdqj4-gzGzoHsz",
+          app_key: "Ug4e3AAAGyzap7dDzuqe6NSI",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -462,10 +572,10 @@
       }
 
       // 如果是文章，请求文章的浏览数，并自增
-      if ('false' === 'true') {
+      if ('true' === 'true') {
         var viewCtn = document.querySelector('#leancloud-post-views-container');
         if (viewCtn || enableIncr) {
-          var target = decodeURI('/archives/2020/index.html');
+          var target = decodeURI('/2020/10/12/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB-js/');
           var viewGetter = getRecord(Counter, target).then((record) => {
             incrArr.push(buildIncrement(record.objectId))
             if (viewCtn) {
@@ -527,6 +637,31 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -534,7 +669,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "知识体系-js&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -549,9 +684,40 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+      icon: "§"
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
 
 
 
