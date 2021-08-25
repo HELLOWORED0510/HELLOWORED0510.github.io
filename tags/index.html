@@ -39,7 +39,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"oJc6u5Pa0fBp7xg95uMNdqj4-gzGzoHsz","app_key":"Ug4e3AAAGyzap7dDzuqe6NSI","server_url":"https://ojc6u5pa.lc-cn-n1-shared.com"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"oJc6u5Pa0fBp7xg95uMNdqj4-gzGzoHsz","app_key":"Ug4e3AAAGyzap7dDzuqe6NSI","server_url":"https://ojc6u5pa.lc-cn-n1-shared.com"}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -135,7 +135,7 @@
   </div>
 </nav>
 
-    <div class="banner intro-2" id="background" false
+    <div class="banner" id="banner" parallax=true
          style="background: url('/img/bg.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
@@ -156,7 +156,7 @@
 
   <main>
     
-      <div class="container nopadding-md">
+      <div class="container nopadding-x-md">
         <div class="py-5" id="board"
           >
           
@@ -166,7 +166,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/tags/backbone/" style="font-size: 15px; color: #bbe">backbone</a> <a href="/tags/css/" style="font-size: 15px; color: #bbe">css</a> <a href="/tags/git/" style="font-size: 22.5px; color: #779bd3">git</a> <a href="/tags/git-actions/" style="font-size: 15px; color: #bbe">git actions</a> <a href="/tags/h5/" style="font-size: 15px; color: #bbe">h5</a> <a href="/tags/hexo/" style="font-size: 15px; color: #bbe">hexo</a> <a href="/tags/ios/" style="font-size: 15px; color: #bbe">ios</a> <a href="/tags/js/" style="font-size: 22.5px; color: #779bd3">js</a> <a href="/tags/node-modules/" style="font-size: 15px; color: #bbe">node_modules</a> <a href="/tags/safai/" style="font-size: 15px; color: #bbe">safai</a> <a href="/tags/underscore/" style="font-size: 15px; color: #bbe">underscore</a> <a href="/tags/webpack/" style="font-size: 15px; color: #bbe">webpack</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/" style="font-size: 15px; color: #bbe">工程化</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px; color: #bbe">浏览器</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" style="font-size: 30px; color: #337ab7">知识体系</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 15px; color: #bbe">网络</a>
+  <a href="/tags/backbone/" style="font-size: 15px; color: #bbe">backbone</a> <a href="/tags/css/" style="font-size: 15px; color: #bbe">css</a> <a href="/tags/docker/" style="font-size: 15px; color: #bbe">docker</a> <a href="/tags/git/" style="font-size: 22.5px; color: #779bd3">git</a> <a href="/tags/git-actions/" style="font-size: 15px; color: #bbe">git actions</a> <a href="/tags/h5/" style="font-size: 15px; color: #bbe">h5</a> <a href="/tags/hexo/" style="font-size: 15px; color: #bbe">hexo</a> <a href="/tags/ios/" style="font-size: 15px; color: #bbe">ios</a> <a href="/tags/js/" style="font-size: 22.5px; color: #779bd3">js</a> <a href="/tags/mongodb/" style="font-size: 15px; color: #bbe">mongodb</a> <a href="/tags/node-modules/" style="font-size: 15px; color: #bbe">node_modules</a> <a href="/tags/safai/" style="font-size: 15px; color: #bbe">safai</a> <a href="/tags/underscore/" style="font-size: 15px; color: #bbe">underscore</a> <a href="/tags/webpack/" style="font-size: 15px; color: #bbe">webpack</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/" style="font-size: 15px; color: #bbe">工程化</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px; color: #bbe">浏览器</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" style="font-size: 30px; color: #337ab7">知识体系</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 15px; color: #bbe">网络</a>
 </div>
 
               </div>
@@ -276,11 +276,8 @@
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
   <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
     NProgress.start()
-    document.addEventListener('DOMContentLoaded', function() {
-      window.NProgress && window.NProgress.inc();
-    })
     window.addEventListener('load', function() {
       NProgress.done();
     })
