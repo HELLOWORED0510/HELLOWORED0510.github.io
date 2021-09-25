@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      350 字
+      397 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      5
        分钟
     </span>
   
@@ -223,50 +223,18 @@
             
             <div class="markdown-body">
               <h4 id="一、-ios-滚动不流畅"><a href="#一、-ios-滚动不流畅" class="headerlink" title="一、 ios 滚动不流畅"></a>一、 ios 滚动不流畅</h4><p>在滚动元素添加</p>
-<pre><code class="hljs css"><span class="hljs-selector-tag">overflow-y</span>: <span class="hljs-selector-tag">auto</span>;
-<span class="hljs-selector-tag">-webkit-overflow-scrolling</span>: <span class="hljs-selector-tag">touch</span>;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">overflow-y</span>: <span class="hljs-selector-tag">auto</span>;<br><span class="hljs-selector-tag">-webkit-overflow-scrolling</span>: <span class="hljs-selector-tag">touch</span>;<br></code></pre></td></tr></table></figure>
 
 <h4 id="二、取消-ios-点击反馈样式"><a href="#二、取消-ios-点击反馈样式" class="headerlink" title="二、取消 ios 点击反馈样式"></a>二、取消 ios 点击反馈样式</h4><p>在父级添加以下样式解决</p>
-<pre><code class="hljs css"><span class="hljs-selector-tag">-webkit-tap-highlight-color</span>: <span class="hljs-selector-tag">rgba</span>(0, 0, 0, 0);</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">-webkit-tap-highlight-color</span>: <span class="hljs-selector-tag">rgba</span>(0, 0, 0, 0);<br></code></pre></td></tr></table></figure>
 
 <h4 id="三、ios-输入框不回弹问题"><a href="#三、ios-输入框不回弹问题" class="headerlink" title="三、ios 输入框不回弹问题"></a>三、ios 输入框不回弹问题</h4><p>通过在 focus，blur 时添加事件监听处理页面滚动来解决</p>
-<pre><code class="hljs js"><span class="hljs-comment">//解决ios页面不回弹问题</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> solveKickBack = <span class="hljs-function">(<span class="hljs-params">ele</span>) =&gt;</span> &#123;
-  <span class="hljs-keyword">if</span> (ele &amp;&amp; <span class="hljs-keyword">typeof</span> ele.addEventListener === <span class="hljs-string">&#x27;function&#x27;</span>) &#123;
-    <span class="hljs-keyword">let</span> v = <span class="hljs-number">0</span>
-    ele.addEventListener(
-      <span class="hljs-string">&#x27;focus&#x27;</span>,
-      <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;
-        v = <span class="hljs-built_in">window</span>.pageYOffset
-      &#125;,
-      <span class="hljs-literal">false</span>
-    )
-    ele.addEventListener(
-      <span class="hljs-string">&#x27;blur&#x27;</span>,
-      <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;
-        <span class="hljs-built_in">window</span>.scrollTo(<span class="hljs-number">0</span>, v)
-      &#125;,
-      <span class="hljs-literal">false</span>
-    )
-  &#125;
-&#125;</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//解决ios页面不回弹问题</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> solveKickBack = <span class="hljs-function">(<span class="hljs-params">ele</span>) =&gt;</span> &#123;<br>  <span class="hljs-keyword">if</span> (ele &amp;&amp; <span class="hljs-keyword">typeof</span> ele.addEventListener === <span class="hljs-string">&#x27;function&#x27;</span>) &#123;<br>    <span class="hljs-keyword">let</span> v = <span class="hljs-number">0</span><br>    ele.addEventListener(<br>      <span class="hljs-string">&#x27;focus&#x27;</span>,<br>      <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        v = <span class="hljs-built_in">window</span>.pageYOffset<br>      &#125;,<br>      <span class="hljs-literal">false</span><br>    )<br>    ele.addEventListener(<br>      <span class="hljs-string">&#x27;blur&#x27;</span>,<br>      <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">window</span>.scrollTo(<span class="hljs-number">0</span>, v)<br>      &#125;,<br>      <span class="hljs-literal">false</span><br>    )<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h4 id="四、flex-basis：0-在低版本-safari-会导致元素高度为-0，导致子元素无法展示"><a href="#四、flex-basis：0-在低版本-safari-会导致元素高度为-0，导致子元素无法展示" class="headerlink" title="四、flex-basis：0 在低版本 safari 会导致元素高度为 0，导致子元素无法展示"></a>四、flex-basis：0 在低版本 safari 会导致元素高度为 0，导致子元素无法展示</h4><blockquote>
 <p>使用 flex-basis:auto 代替</p>
 </blockquote>
-<h4 id="五、box-shadow-绘制-0-5px-边框在-ios-有兼容问题，需要使用-border-方案代替"><a href="#五、box-shadow-绘制-0-5px-边框在-ios-有兼容问题，需要使用-border-方案代替" class="headerlink" title="五、box-shadow 绘制 0.5px 边框在 ios 有兼容问题，需要使用 border 方案代替"></a>五、box-shadow 绘制 0.5px 边框在 ios 有兼容问题，需要使用 border 方案代替</h4><pre><code class="hljs css"><span class="hljs-selector-pseudo">::after</span> &#123;
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">200%</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">200%</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid currentColor;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.5</span>);
-  <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-&#125;</code></pre>
+<h4 id="五、box-shadow-绘制-0-5px-边框在-ios-有兼容问题，需要使用-border-方案代替"><a href="#五、box-shadow-绘制-0-5px-边框在-ios-有兼容问题，需要使用-border-方案代替" class="headerlink" title="五、box-shadow 绘制 0.5px 边框在 ios 有兼容问题，需要使用 border 方案代替"></a>五、box-shadow 绘制 0.5px 边框在 ios 有兼容问题，需要使用 border 方案代替</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-pseudo">::after</span> &#123;<br>  <span class="hljs-attribute">position</span>: absolute;<br>  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">box-sizing</span>: border-box;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">200%</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">200%</span>;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid currentColor;<br>  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;<br>  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.5</span>);<br>  <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h4 id="六、避免在滚动区域使用绝对定位元素-否则会跟随滚动，失去定位的默认效果"><a href="#六、避免在滚动区域使用绝对定位元素-否则会跟随滚动，失去定位的默认效果" class="headerlink" title="六、避免在滚动区域使用绝对定位元素,否则会跟随滚动，失去定位的默认效果"></a>六、避免在滚动区域使用绝对定位元素,否则会跟随滚动，失去定位的默认效果</h4><h4 id="七、通过模拟器调试-safari-兼容性问题"><a href="#七、通过模拟器调试-safari-兼容性问题" class="headerlink" title="七、通过模拟器调试 safari 兼容性问题"></a>七、通过模拟器调试 safari 兼容性问题</h4><ul>
 <li>列出可用设备<blockquote>
@@ -281,6 +249,8 @@
 <h5 id="八、textarea-获取焦点时左上角显示小黑点"><a href="#八、textarea-获取焦点时左上角显示小黑点" class="headerlink" title="八、textarea 获取焦点时左上角显示小黑点"></a>八、textarea 获取焦点时左上角显示小黑点</h5><blockquote>
 <p>检查是否设置了 overflow-y:scroll,改成 overflow-y:auto 即可解决</p>
 </blockquote>
+<h4 id="九、safari-禁用元素颜色浅问题"><a href="#九、safari-禁用元素颜色浅问题" class="headerlink" title="九、safari 禁用元素颜色浅问题"></a>九、safari 禁用元素颜色浅问题</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:disabled</span> &#123;<br>  opacity: 1; //覆盖safari 会默认添加0.4的不透明度<br>  -webkit-text-fill-color: #8c8c8c; //解决safari颜色浅问题<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <hr>
 <p>参考链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c5ad2e2be367">从命令行启动 Xcode 模拟器</a></p>
 

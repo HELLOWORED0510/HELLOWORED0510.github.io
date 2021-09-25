@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      380 字
+      377 字
     </span>
   
 
@@ -223,77 +223,10 @@
             
             <div class="markdown-body">
               <p>根据使用git action自动部署的教程配置了部署配置文件（配置说明可以查看底部参考链接）</p>
-<pre><code class="hljs bash">name: CI
-
-on:
-  push:
-    branches:
-      - master
-
-env:
-  GIT_USER: yinjikai
-  GIT_EMAIL: jackyin94@gmail.com
-  THEME_REPO: fluid-dev/hexo-theme-fluid
-  THEME_BRANCH: master
-  DEPLOY_REPO: yinjikai/yinjikai.github.io
-  DEPLOY_BRANCH: master
-
-<span class="hljs-built_in">jobs</span>:
-  build:
-    name: Build on node <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125; and <span class="hljs-variable">$&#123;&#123; matrix.os &#125;</span>&#125;
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node_version: [12.x]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Checkout theme repo
-        uses: actions/checkout@v2
-        with:
-          repository: <span class="hljs-variable">$&#123;&#123; env.THEME_REPO &#125;</span>&#125;
-          ref: <span class="hljs-variable">$&#123;&#123; env.THEME_BRANCH &#125;</span>&#125;
-          path: themes/concise
-
-      - name: Checkout deploy repo
-        uses: actions/checkout@v2
-        with:
-          repository: <span class="hljs-variable">$&#123;&#123; env.DEPLOY_REPO &#125;</span>&#125;
-          ref: <span class="hljs-variable">$&#123;&#123; env.DEPLOY_BRANCH &#125;</span>&#125;
-          path: .deploy_git
-
-      - name: Use Node.js <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125;
-        uses: actions/setup-node@v1
-        with:
-          node-version: <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125;
-
-      - name: Configuration environment
-        env:
-          HEXO_DEPLOY_PRI: <span class="hljs-variable">$&#123;&#123;secrets.HEXO_DEPLOY_PRI&#125;</span>&#125;
-        run: |
-          sudo timedatectl set-timezone <span class="hljs-string">&quot;Asia/Shanghai&quot;</span>
-          mkdir -p ~/.ssh/
-          <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HEXO_DEPLOY_PRI</span>&quot;</span> &gt; ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts
-          git config --global user.name <span class="hljs-variable">$GIT_USER</span>
-          git config --global user.email <span class="hljs-variable">$GIT_EMAIL</span>
-         
-      - name: Install dependencies
-        run: |
-          npm install
-      - name: Deploy hexo
-        run: |
-          npm run deploy</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><code class="hljs bash">name: CI<br><br>on:<br>  push:<br>    branches:<br>      - master<br><br>env:<br>  GIT_USER: yinjikai<br>  GIT_EMAIL: jackyin94@gmail.com<br>  THEME_REPO: fluid-dev/hexo-theme-fluid<br>  THEME_BRANCH: master<br>  DEPLOY_REPO: yjk2022/yjk2022.github.io<br>  DEPLOY_BRANCH: master<br><br><span class="hljs-built_in">jobs</span>:<br>  build:<br>    name: Build on node <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125; and <span class="hljs-variable">$&#123;&#123; matrix.os &#125;</span>&#125;<br>    runs-on: ubuntu-latest<br>    strategy:<br>      matrix:<br>        os: [ubuntu-latest]<br>        node_version: [12.x]<br><br>    steps:<br>      - name: Checkout<br>        uses: actions/checkout@v2<br><br>      - name: Checkout theme repo<br>        uses: actions/checkout@v2<br>        with:<br>          repository: <span class="hljs-variable">$&#123;&#123; env.THEME_REPO &#125;</span>&#125;<br>          ref: <span class="hljs-variable">$&#123;&#123; env.THEME_BRANCH &#125;</span>&#125;<br>          path: themes/concise<br><br>      - name: Checkout deploy repo<br>        uses: actions/checkout@v2<br>        with:<br>          repository: <span class="hljs-variable">$&#123;&#123; env.DEPLOY_REPO &#125;</span>&#125;<br>          ref: <span class="hljs-variable">$&#123;&#123; env.DEPLOY_BRANCH &#125;</span>&#125;<br>          path: .deploy_git<br><br>      - name: Use Node.js <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125;<br>        uses: actions/setup-node@v1<br>        with:<br>          node-version: <span class="hljs-variable">$&#123;&#123; matrix.node_version &#125;</span>&#125;<br><br>      - name: Configuration environment<br>        env:<br>          HEXO_DEPLOY_PRI: <span class="hljs-variable">$&#123;&#123;secrets.HEXO_DEPLOY_PRI&#125;</span>&#125;<br>        run: |<br>          sudo timedatectl set-timezone <span class="hljs-string">&quot;Asia/Shanghai&quot;</span><br>          mkdir -p ~/.ssh/<br>          <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HEXO_DEPLOY_PRI</span>&quot;</span> &gt; ~/.ssh/id_rsa<br>          chmod 600 ~/.ssh/id_rsa<br>          ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts<br>          git config --global user.name <span class="hljs-variable">$GIT_USER</span><br>          git config --global user.email <span class="hljs-variable">$GIT_EMAIL</span><br>         <br>      - name: Install dependencies<br>        run: |<br>          npm install<br>      - name: Deploy hexo<br>        run: |<br>          npm run deploy<br></code></pre></td></tr></table></figure>
 <p>部署后执行workflow一直报错<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DmJOld"><img src="https://s3.ax1x.com/2020/11/18/DmJOld.png" srcset="/img/loading.gif" alt="DmJOld.png"></a></p>
 <p>提示没有权限</p>
-<pre><code class="hljs json">remote: Permission to yinjikai/yinjikai.github.io.git denied to github-actions[bot]
-
-fatal: unable to access &#x27;https://github.com/yinjikai/yinjikai.github.io/&#x27;: The requested URL returned error: 403
-</code></pre>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json">remote: Permission to yinjikai/yinjikai.github.io.git denied to github-actions[bot]<br><br>fatal: unable to access &#x27;https://github.com/yinjikai/yinjikai.github.io/&#x27;: The requested URL returned error: 403<br><br></code></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/DmJeiD"><img src="https://s3.ax1x.com/2020/11/18/DmJeiD.png" srcset="/img/loading.gif" alt="DmJeiD.png"></a></p>
 <p>继续翻阅部署文章，发现自己只配置了密钥没有调整hexo deploy配置为ssh</p>
 <blockquote>
@@ -303,10 +236,7 @@ fatal: unable to access &#x27;https://github.com/yinjikai/yinjikai.github.io/&#x
 <blockquote>
 <p>调整为ssh地址问题得到解决</p>
 </blockquote>
-<pre><code class="hljs json">deploy:
-  type: git
-  repo: git@github.com:yinjikai/yinjikai.github.io.git
-  branch: master</code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json">deploy:<br>  type: git<br>  repo: git@github.com:yinjikai/yinjikai.github.io.git<br>  branch: master<br></code></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/DmYFpQ"><img src="https://s3.ax1x.com/2020/11/18/DmYFpQ.png" srcset="/img/loading.gif" alt="DmYFpQ.png"></a></p>
 <blockquote>
 <p>参考链接</p>
