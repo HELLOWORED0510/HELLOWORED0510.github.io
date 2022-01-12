@@ -141,7 +141,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="上帝为你关上一道防盗门，还会顺手给你上了一把钛合金锁。">
+            <span class="h2" id="subtitle" title="死并不可怕，怕的是再也不能活了。">
               
             </span>
 
@@ -176,16 +176,20 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/08/13/%E5%AE%9A%E6%97%B6%E5%90%8C%E6%AD%A5%E5%85%AC%E7%BD%91ip/">定时同步公网ip</a>
+        <a href="/2021/10/18/yarn%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99-unexpected-end-of-file/">yarn安装报错...unexpected end of file</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/08/13/%E5%AE%9A%E6%97%B6%E5%90%8C%E6%AD%A5%E5%85%AC%E7%BD%91ip/">
+        <a href="/2021/10/18/yarn%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99-unexpected-end-of-file/">
           
           
             
           
-          https://www.cxyzjd.com/article/weinsheimer/102613582
+          yarn安装报错
+1error An unexpected error occurred: &quot;http://npm.....1.0.20.tgz: unexpected end of file
+解决方案
+1yarn install || yarn install || yarn install
+参考链接
 
         </a>
       </p>
@@ -194,8 +198,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-08-13 14:02" pubdate>
-              2021-08-13
+            <time datetime="2021-10-18 18:15" pubdate>
+              2021-10-18
             </time>
           </div>
         
@@ -211,18 +215,19 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/08/13/%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85apt/">重新安装apt</a>
+        <a href="/2021/08/13/%E5%90%8C%E6%AD%A5%E5%85%AC%E7%BD%91ip%E5%88%B0%E9%82%AE%E7%AE%B1/">同步公网ip到邮箱</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/08/13/%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85apt/">
+        <a href="/2021/08/13/%E5%90%8C%E6%AD%A5%E5%85%AC%E7%BD%91ip%E5%88%B0%E9%82%AE%E7%AE%B1/">
           
           
             
           
-          https://serverfault.com/questions/1035907/how-to-install-apt-back-after-apt-transport-https-uninstalled-it
-ubuntu-keyring
-https://blog.csdn.net/yyqjjw/article/details/104118047
+          12#!/bin/bashecho $(curl ip.sb) | mail -s &quot;公网IP&quot; 1259559060@qq.com
+
+可以搭配定时任务固定时间间隔获取 ip
+12# 每五分钟获取一次*/5 * * * * bash /root/dev/shell-scripts/ddns.sh &gt;/dev/null 2&gt;&amp;1
 
         </a>
       </p>
@@ -231,7 +236,7 @@ https://blog.csdn.net/yyqjjw/article/details/104118047
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-08-13 11:13" pubdate>
+            <time datetime="2021-08-13 14:02" pubdate>
               2021-08-13
             </time>
           </div>
@@ -311,23 +316,17 @@ https://blog.csdn.net/yyqjjw/article/details/104118047
           
             
           
-          一、基础选择器通配符 *类型选择器span &#123;
-  color: red;
-&#125;
+          一、基础选择器通配符 *类型选择器123span &#123;  color: red;&#125;
 
 类名选择器
 
-.test &#123;
-  color: red;
-&#125;
+123.test &#123;  color: red;&#125;
 
-id 选择器#test &#123;
-  color: red;
-&#125;
+id 选择器123#test &#123;  color: red;&#125;
 
-属性选择器包含属性 [attr]&lt;span disabled&gt;&lt;/span&gt;
+属性选择器包含属性 [attr]1&lt;span disabled&gt;&lt;/span&gt;
 
-span[disabled]
+123span[di
         </a>
       </p>
 
@@ -377,8 +376,7 @@ span[disabled]
           
           设置了gitignore 发现文件没有被排除
 需要清空一下缓存
-#清空缓存(注意最后有个点)
-git rm -rf --cached .
+12#清空缓存(注意最后有个点)git rm -rf --cached .
 刷新目录，发现node_modules已经置灰,说明我们设置的ignore规则生效了
 
         </a>
@@ -486,16 +484,10 @@ git rm -rf --cached .
           
 
 执行插值
-&lt;%= %&gt;
-
-var compiled = _.template(&quot;hello: &lt;%= name %&gt;&quot;);
-compiled(&#123;name: &#x27;moe&#x27;&#125;);
-=&gt; &quot;hello: moe&quot;
+12345&lt;%= %&gt;var compiled = _.template(&quot;hello: &lt;%= name %&gt;&quot;);compiled(&#123;name: &#x27;moe&#x27;&#125;);=&gt; &quot;hello: moe&quot;
 
 执行js代码
-&lt;% %&gt;
-
-var compiled = _.te
+123456&lt;% %&gt;var compiled =
         </a>
       </p>
 

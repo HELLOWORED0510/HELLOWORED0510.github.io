@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      138 字
+      141 字
     </span>
   
 
@@ -225,25 +225,12 @@
               <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/DVve41"><img src="https://s3.ax1x.com/2020/11/17/DVve41.png" srcset="/img/loading.gif" alt="DVve41.png"></a></p>
 <ul>
 <li><p>执行插值</p>
-<pre><code class="hljs js">&lt;%= %&gt;
-
-<span class="hljs-keyword">var</span> compiled = _.template(<span class="hljs-string">&quot;hello: &lt;%= name %&gt;&quot;</span>);
-compiled(&#123;<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;moe&#x27;</span>&#125;);
-=&gt; <span class="hljs-string">&quot;hello: moe&quot;</span></code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;%= %&gt;<br><br><span class="hljs-keyword">var</span> compiled = _.template(<span class="hljs-string">&quot;hello: &lt;%= name %&gt;&quot;</span>);<br>compiled(&#123;<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;moe&#x27;</span>&#125;);<br>=&gt; <span class="hljs-string">&quot;hello: moe&quot;</span><br></code></pre></td></tr></table></figure>
 </li>
 <li><p>执行js代码</p>
-<pre><code class="hljs js">&lt;% %&gt;
-
-<span class="hljs-keyword">var</span> compiled = _.template(<span class="hljs-string">&quot;&lt;% print(&#x27;Hello &#x27; + epithet); %&gt;&quot;</span>);
-compiled(&#123;<span class="hljs-attr">epithet</span>: <span class="hljs-string">&quot;stooge&quot;</span>&#125;);
-=&gt; <span class="hljs-string">&quot;Hello stooge&quot;</span>
-</code></pre></li>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;% %&gt;<br><br><span class="hljs-keyword">var</span> compiled = _.template(<span class="hljs-string">&quot;&lt;% print(&#x27;Hello &#x27; + epithet); %&gt;&quot;</span>);<br>compiled(&#123;<span class="hljs-attr">epithet</span>: <span class="hljs-string">&quot;stooge&quot;</span>&#125;);<br>=&gt; <span class="hljs-string">&quot;Hello stooge&quot;</span><br><br></code></pre></td></tr></table></figure></li>
 <li><p>对html代码进行转义</p>
-<pre><code class="hljs js">&lt;%- %&gt;
-
-<span class="hljs-keyword">var</span> template = _.template(<span class="hljs-string">&quot;&lt;b&gt;&lt;%- value %&gt;&lt;/b&gt;&quot;</span>);
-template(&#123;<span class="hljs-attr">value</span>: <span class="hljs-string">&#x27;&lt;script&gt;&#x27;</span>&#125;);
-=&gt; <span class="hljs-string">&quot;&lt;b&gt;&amp;lt;script&amp;gt;&lt;/b&gt;&quot;</span></code></pre></li>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js">&lt;%- %&gt;<br><br><span class="hljs-keyword">var</span> template = _.template(<span class="hljs-string">&quot;&lt;b&gt;&lt;%- value %&gt;&lt;/b&gt;&quot;</span>);<br>template(&#123;<span class="hljs-attr">value</span>: <span class="hljs-string">&#x27;&lt;script&gt;&#x27;</span>&#125;);<br>=&gt; <span class="hljs-string">&quot;&lt;b&gt;&amp;lt;script&amp;gt;&lt;/b&gt;&quot;</span><br></code></pre></td></tr></table></figure></li>
 <li><p>注意事项</p>
 <blockquote>
 </blockquote>

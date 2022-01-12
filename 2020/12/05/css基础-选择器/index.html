@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      638 字
+      649 字
     </span>
   
 
@@ -222,127 +222,71 @@
             <h1 style="display: none">css基础-选择器</h1>
             
             <div class="markdown-body">
-              <h2 id="一、基础选择器"><a href="#一、基础选择器" class="headerlink" title="一、基础选择器"></a>一、基础选择器</h2><h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符 *"></a>通配符 *</h3><h3 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h3><pre><code class="hljs css"><span class="hljs-selector-tag">span</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+              <h2 id="一、基础选择器"><a href="#一、基础选择器" class="headerlink" title="一、基础选择器"></a>一、基础选择器</h2><h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符 *"></a>通配符 *</h3><h3 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="类名选择器"><a href="#类名选择器" class="headerlink" title="类名选择器"></a>类名选择器</h3><div class="test"></div>
 
-<pre><code class="hljs css"><span class="hljs-selector-class">.test</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.test</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><pre><code class="hljs css"><span class="hljs-selector-id">#test</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-id">#test</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><h4 id="包含属性-attr"><a href="#包含属性-attr" class="headerlink" title="包含属性 [attr]"></a>包含属性 [attr]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><h4 id="包含属性-attr"><a href="#包含属性-attr" class="headerlink" title="包含属性 [attr]"></a>包含属性 [attr]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[disabled]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[disabled]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="属性完全等于目标值-attr-value"><a href="#属性完全等于目标值-attr-value" class="headerlink" title="属性完全等于目标值 [attr=value]"></a>属性完全等于目标值 [attr=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<h4 id="属性完全等于目标值-attr-value"><a href="#属性完全等于目标值-attr-value" class="headerlink" title="属性完全等于目标值 [attr=value]"></a>属性完全等于目标值 [attr=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="属性值字符串包含-value-attr-value"><a href="#属性值字符串包含-value-attr-value" class="headerlink" title="属性值字符串包含 value [attr*=value]"></a>属性值字符串包含 value [attr*=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;1test12&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<h4 id="属性值字符串包含-value-attr-value"><a href="#属性值字符串包含-value-attr-value" class="headerlink" title="属性值字符串包含 value [attr*=value]"></a>属性值字符串包含 value [attr*=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;1test12&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name*=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name*=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="属性值字符等于-value-或者以-value-开头以-连接，多用来匹配语言的代码段-attr-value"><a href="#属性值字符等于-value-或者以-value-开头以-连接，多用来匹配语言的代码段-attr-value" class="headerlink" title="属性值字符等于 value 或者以 value 开头以-连接，多用来匹配语言的代码段 [attr|=value]"></a>属性值字符等于 value 或者以 value 开头以<code>-</code>连接，多用来匹配语言的代码段 [attr|=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zh-CN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<h4 id="属性值字符等于-value-或者以-value-开头以-连接，多用来匹配语言的代码段-attr-value"><a href="#属性值字符等于-value-或者以-value-开头以-连接，多用来匹配语言的代码段-attr-value" class="headerlink" title="属性值字符等于 value 或者以 value 开头以-连接，多用来匹配语言的代码段 [attr|=value]"></a>属性值字符等于 value 或者以 value 开头以<code>-</code>连接，多用来匹配语言的代码段 [attr|=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zh-CN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zh&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zh&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name|=<span class="hljs-string">&#x27;zh&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name|=<span class="hljs-string">&#x27;zh&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<h4 id="属性值-中包含-value-attr-value"><a href="#属性值-中包含-value-attr-value" class="headerlink" title="属性值 中包含 value [attr~=value]"></a>属性值 中包含 value [attr~=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;name test red&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<h4 id="属性值-中包含-value-attr-value"><a href="#属性值-中包含-value-attr-value" class="headerlink" title="属性值 中包含 value [attr~=value]"></a>属性值 中包含 value [attr~=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;name test red&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[class~=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[class~=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<h4 id="属性值字符串以-value-开头-attr-value"><a href="#属性值字符串以-value-开头-attr-value" class="headerlink" title="属性值字符串以 value 开头 [attr^=value]"></a>属性值字符串以 value 开头 [attr^=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;test111&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<h4 id="属性值字符串以-value-开头-attr-value"><a href="#属性值字符串以-value-开头-attr-value" class="headerlink" title="属性值字符串以 value 开头 [attr^=value]"></a>属性值字符串以 value 开头 [attr^=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;test111&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name^=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name^=<span class="hljs-string">&#x27;test&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<h4 id="属性值字符串以-value-结尾-attr-value"><a href="#属性值字符串以-value-结尾-attr-value" class="headerlink" title="属性值字符串以 value 结尾 [attr$=value]"></a>属性值字符串以 value 结尾 [attr$=value]</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;test_item&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<h4 id="属性值字符串以-value-结尾-attr-value"><a href="#属性值字符串以-value-结尾-attr-value" class="headerlink" title="属性值字符串以 value 结尾 [attr$=value]"></a>属性值字符串以 value 结尾 [attr$=value]</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;test_item&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name$=<span class="hljs-string">&#x27;item&#x27;</span>]</span> &#123;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name$=<span class="hljs-string">&#x27;item&#x27;</span>]</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h5 id="属性操作符"><a href="#属性操作符" class="headerlink" title="属性操作符"></a>属性操作符</h5><ul>
 <li><code>i</code> 忽略大小写</li>
 </ul>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;UserName&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;UserName&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span> i]</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span> i]</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li><code>s</code> 大小写敏感</li>
 </ul>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span> s]</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">span</span><span class="hljs-selector-attr">[name=<span class="hljs-string">&#x27;username&#x27;</span> s]</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h2 id="二、关系选择器"><a href="#二、关系选择器" class="headerlink" title="二、关系选择器"></a>二、关系选择器</h2><h3 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h3><h4 id="同一个父级即可-无关元素顺序-A-B-匹配与-A-相同父级的所有-B"><a href="#同一个父级即可-无关元素顺序-A-B-匹配与-A-相同父级的所有-B" class="headerlink" title="同一个父级即可,无关元素顺序 A ~ B,匹配与 A 相同父级的所有 B"></a>同一个父级即可,无关元素顺序 <code>A ~ B</code>,匹配与 A 相同父级的所有 B</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Here is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>Here is some code.<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>And here is a red span!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>And this is a red span!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>More code...<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>How are you?<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whatever it may be, keep smiling.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+<h2 id="二、关系选择器"><a href="#二、关系选择器" class="headerlink" title="二、关系选择器"></a>二、关系选择器</h2><h3 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h3><h4 id="同一个父级即可-无关元素顺序-A-B-匹配与-A-相同父级的所有-B"><a href="#同一个父级即可-无关元素顺序-A-B-匹配与-A-相同父级的所有-B" class="headerlink" title="同一个父级即可,无关元素顺序 A ~ B,匹配与 A 相同父级的所有 B"></a>同一个父级即可,无关元素顺序 <code>A ~ B</code>,匹配与 A 相同父级的所有 B</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Here is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>Here is some code.<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>And here is a red span!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>And this is a red span!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>More code...<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>How are you?<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whatever it may be, keep smiling.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">p</span> ~ <span class="hljs-selector-tag">span</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> ~ <span class="hljs-selector-tag">span</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="同一父级且相邻的元素-A-B-匹配-A-B-同一父级且-A-B-相邻的-B"><a href="#同一父级且相邻的元素-A-B-匹配-A-B-同一父级且-A-B-相邻的-B" class="headerlink" title="同一父级且相邻的元素 A + B,匹配 A,B 同一父级且 A,B 相邻的 B"></a>同一父级且相邻的元素 <code>A + B</code>,匹配 A,B 同一父级且 A,B 相邻的 B</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<h4 id="同一父级且相邻的元素-A-B-匹配-A-B-同一父级且-A-B-相邻的-B"><a href="#同一父级且相邻的元素-A-B-匹配-A-B-同一父级且-A-B-相邻的-B" class="headerlink" title="同一父级且相邻的元素 A + B,匹配 A,B 同一父级且 A,B 相邻的 B"></a>同一父级且相邻的元素 <code>A + B</code>,匹配 A,B 同一父级且 A,B 相邻的 B</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-of-type</span> + <span class="hljs-selector-tag">li</span> &#123;
-  <span class="hljs-attribute">color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-of-type</span> + <span class="hljs-selector-tag">li</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><h4 id="直接子节点-A-B-匹配-A-的直接子节点-B"><a href="#直接子节点-A-B-匹配-A-的直接子节点-B" class="headerlink" title="直接子节点,A > B,匹配 A 的直接子节点 B"></a>直接子节点,<code>A > B</code>,匹配 A 的直接子节点 B</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span></span>
-<span class="hljs-tag">    &gt;</span>red
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>normal<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><h4 id="直接子节点-A-B-匹配-A-的直接子节点-B"><a href="#直接子节点-A-B-匹配-A-的直接子节点-B" class="headerlink" title="直接子节点,A > B,匹配 A 的直接子节点 B"></a>直接子节点,<code>A > B</code>,匹配 A 的直接子节点 B</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">span</span></span><br><span class="hljs-tag">    &gt;</span>red<br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>normal<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">span</span> &#123;
-  <span class="hljs-attribute">background-color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">span</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="任意子元素-A-B-匹配-A-下面的所有-B"><a href="#任意子元素-A-B-匹配-A-下面的所有-B" class="headerlink" title="任意子元素, A B,匹配 A 下面的所有 B"></a>任意子元素, <code>A B</code>,匹配 A 下面的所有 B</h4><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span></span>
-<span class="hljs-tag">    &gt;</span>red
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<h4 id="任意子元素-A-B-匹配-A-下面的所有-B"><a href="#任意子元素-A-B-匹配-A-下面的所有-B" class="headerlink" title="任意子元素, A B,匹配 A 下面的所有 B"></a>任意子元素, <code>A B</code>,匹配 A 下面的所有 B</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">span</span></span><br><span class="hljs-tag">    &gt;</span>red<br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">span</span> &#123;
-  <span class="hljs-attribute">background-color</span>: red;
-&#125;</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">span</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>参考链接：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors">CSS reference</a></p>
